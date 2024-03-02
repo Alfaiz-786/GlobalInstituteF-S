@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes scrollMessage {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply the animation class to the text */
+.animate-scrollMessage {
+  animation: scrollMessage 20s linear infinite;
+}
+
+/* Add a hover state to pause the animation */
+.hover\:animate-paused:hover {
+  animation-play-state: paused;
+}
