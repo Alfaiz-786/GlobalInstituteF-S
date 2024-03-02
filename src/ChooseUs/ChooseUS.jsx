@@ -1,4 +1,7 @@
 import React from "react";
+import classroom from "../assets/classroom.png";
+import classs from "../assets/class.png";
+import image from "../assets/image.jpg";
 
 const ChooseUs = () => {
   return (
@@ -16,7 +19,7 @@ const ChooseUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
         <div className="text-center p-6 bg-red-100 rounded-md shadow-md">
           <img
-            src="src/assets/classroom.png"
+            src={classroom}
             alt="Institute Facilities"
             className="object-cover mb-4 mx-auto w-full"
           />
@@ -27,7 +30,7 @@ const ChooseUs = () => {
         </div>
         <div className="text-center p-6 bg-red-100 rounded-md shadow-md">
           <img
-            src="src/assets/class.png"
+            src={classs}
             alt="Experienced Instructors"
             className=" object-cover mb-4 mx-auto w-full"
           />
@@ -38,7 +41,7 @@ const ChooseUs = () => {
         </div>
         <div className="text-center p-6 bg-red-100 rounded-md shadow-md">
           <img
-            src="src/assets/image.jpg"
+            src={image}
             alt="Global Recognition"
             className="w-full  object-cover mb-4 mx-auto "
           />

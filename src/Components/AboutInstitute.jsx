@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const AboutInstitute = () => {
   return (
@@ -17,7 +18,7 @@ const AboutInstitute = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           {/* Placeholder Image (Replace with your actual image) */}
           <img
-            src="src/assets/logo.png"
+            src={logo}
             alt="Institute Facilities"
             className="w-full h-78 object-cover rounded-md shadow-md mb-6"
           />

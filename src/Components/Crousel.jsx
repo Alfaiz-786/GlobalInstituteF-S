@@ -1,6 +1,9 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import fire1 from "../assets/fire1.jpg";
+import fire2 from "../assets/fire2.jpg";
+import fire3 from "../assets/fire3.jpg";
 
 const Carousels = () => {
   return (
@@ -10,7 +13,7 @@ const Carousels = () => {
           <img
             style={{ objectFit: "cover", height: "70vh", width: "100%" }}
             className="d-block w-100"
-            src="src/assets/fire1.jpg"
+            src={fire1}
             alt="First slide"
           />
           <Carousel.Caption className="d-flex flex-column align-items-center justify-content-center">
@@ -27,7 +30,7 @@ const Carousels = () => {
           <img
             style={{ objectFit: "cover", height: "70vh", width: "100%" }}
             className="d-block w-100"
-            src="src/assets/fire2.jpg"
+            src={fire2}
             alt="Second slide"
           />
           <Carousel.Caption className="d-flex flex-column align-items-center justify-content-center">
@@ -44,7 +47,7 @@ const Carousels = () => {
           <img
             style={{ objectFit: "cover", height: "70vh", width: "100%" }}
             className="d-block w-100"
-            src="src/assets/fire3.jpg"
+            src={fire3}
             alt="Third slide"
           />
           <Carousel.Caption className="d-flex flex-column align-items-center justify-content-center">

@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
       <div className="container flex flex-col lg:flex-row   relative z-10">
         <div className="text-center lg:text-left">
           <img
-            src="src/assets/logo.png" // Replace with the actual path to your logo image
+            src={logo} // Replace with the actual path to your logo image
             alt="Global Institute Logo"
             className="h-48 mx-auto"
           />

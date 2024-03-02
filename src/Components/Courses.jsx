@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import fire5 from "../assets/fire5.png";
+import fire4 from "../assets/fire4.png";
+import fire7 from "../assets/fire7.png";
+import fire6 from "../assets/fire6.png";
 
 const CourseCard = ({ title, description, duration, level, image, id }) => {
   return (
@@ -49,7 +53,7 @@ const OurCourses = () => {
       description: "Basic course for aspiring firefighters.",
       duration: "3 months",
       level: "Beginner",
-      image: "src/assets/fire5.png", // Replace with actual image URL
+      image: fire5, // Replace with actual image URL
     },
     {
       id: 2,
@@ -57,7 +61,7 @@ const OurCourses = () => {
       description: "In-depth program covering fire and safety protocols.",
       duration: "6 months",
       level: "Intermediate",
-      image: "src/assets/fire4.png", // Replace with actual image URL
+      image: fire4, // Replace with actual image URL
     },
     {
       id: 3,
@@ -65,7 +69,7 @@ const OurCourses = () => {
       description: "Advanced program with a focus on safety management.",
       duration: "12 months",
       level: "Advanced",
-      image: "src/assets/fire7.png", // Replace with actual image URL
+      image: fire7, // Replace with actual image URL
     },
     {
       id: 4,
@@ -73,7 +77,7 @@ const OurCourses = () => {
       description: "Specialized course for industrial safety professionals.",
       duration: "9 months",
       level: "Advanced",
-      image: "/src/assets/fire6.png", // Replace with actual image URL
+      image: fire6, // Replace with actual image URL
     },
     // Add more courses as needed
   ];

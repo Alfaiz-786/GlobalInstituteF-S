@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa"; // Import the FontAwesome icons
 import { Image } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center flex-wrap">
         <div className="text-white font-bold text-2xl md:text-lg md:mb-0">
           <Link to="/">
-            <img
-              className=" w-20 flex justify-center"
-              src="/src/assets/logo.png"
-            />
+            <img className=" w-20 flex justify-center" src={logo} />
           </Link>
         </div>
         <div className="flex items-center">

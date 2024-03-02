@@ -5,11 +5,15 @@ import AboutUs from "./AboutUs/AboutUs";
 import ChooseUs from "./ChooseUs/ChooseUS";
 import Home from "./Home/Home";
 import ContactUs from "./ContactUs/ContactUs";
-import CourseDetail from "./Components/CourseDetail";
+// import CourseDetail from "./Components/CourseDetail";
 import CertificateInFiremen from "./Components/CertificateInFiremen";
 import DiplomaInFireAndSafety from "./Components/DiplomaInFireAndSafety";
 import PGInFireAndSafetyManagement from "./Components/PGInFireAndSafetyManagement";
 import AdvanceDiplomaInIndustrialSafety from "./Components/AdvanceDiplomaInIndustrialSafety";
+import fire5 from "./assets/fire5.png";
+import fire4 from "./assets/fire4.png";
+import fire7 from "./assets/fire7.png";
+import fire6 from "./assets/fire6.png";
 
 const AllRoutes = () => {
   const courses = [
@@ -19,7 +23,7 @@ const AllRoutes = () => {
       description: "Basic course for aspiring firefighters.",
       duration: "3 months",
       level: "Beginner",
-      image: "src/assets/fire5.png",
+      image: fire5,
     },
     {
       id: 2,
@@ -27,7 +31,7 @@ const AllRoutes = () => {
       description: "In-depth program covering fire and safety protocols.",
       duration: "6 months",
       level: "Intermediate",
-      image: "src/assets/fire4.png",
+      image: fire7,
     },
     {
       id: 3,
@@ -35,7 +39,7 @@ const AllRoutes = () => {
       description: "Advanced program with a focus on safety management.",
       duration: "12 months",
       level: "Advanced",
-      image: "src/assets/fire7.png",
+      image: fire6,
     },
     {
       id: 4,
@@ -43,7 +47,7 @@ const AllRoutes = () => {
       description: "Specialized course for industrial safety professionals.",
       duration: "9 months",
       level: "Advanced",
-      image: "/src/assets/fire6.png",
+      image: fire4,
     },
   ];
 

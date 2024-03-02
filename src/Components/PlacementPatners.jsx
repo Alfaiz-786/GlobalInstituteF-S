@@ -1,47 +1,27 @@
 import React, { useState, useEffect } from "react";
+import logo1 from "../assets/logo-1.jpeg";
+import logo2 from "../assets/logo-2.jpeg";
+import logo3 from "../assets/logo-3.jpeg";
+import logo5 from "../assets/logo-5.jpeg";
+import logo6 from "../assets/logo-6.jpeg";
+import logo7 from "../assets/logo-7.jpeg";
+import logo9 from "../assets/logo-9.jpeg";
+import logo10 from "../assets/logo-10.jpeg";
+import logo11 from "../assets/logo-11.jpeg";
+import logo12 from "../assets/logo-12.jpeg";
 
 const PlacementPartners = () => {
   const initialPartners = [
-    {
-      name: "Company A",
-      logo: "src/assets/logo-1.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company B",
-      logo: "src/assets/logo-2.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company C",
-      logo: "src/assets/logo-3.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company D",
-      logo: "src/assets/logo-5.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company E",
-      logo: "src/assets/logo-6.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company A",
-      logo: "src/assets/logo-7.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company B",
-      logo: "src/assets/logo-9.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company C",
-      logo: "src/assets/logo-10.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company D",
-      logo: "src/assets/logo-11.jpeg", // Replace with actual logo URL
-    },
-    {
-      name: "Company E",
-      logo: "src/assets/logo-12.jpeg", // Replace with actual logo URL
-    },
+    { name: "Company A", logo: logo1 },
+    { name: "Company B", logo: logo2 },
+    { name: "Company C", logo: logo3 },
+    { name: "Company D", logo: logo5 },
+    { name: "Company E", logo: logo6 },
+    { name: "Company A", logo: logo7 },
+    { name: "Company B", logo: logo9 },
+    { name: "Company C", logo: logo10 },
+    { name: "Company D", logo: logo11 },
+    { name: "Company E", logo: logo12 },
   ];
 
   const logosPerSet = 5;
@@ -53,9 +33,9 @@ const PlacementPartners = () => {
         (prevIndex) =>
           (prevIndex + 1) % Math.ceil(initialPartners.length / logosPerSet)
       );
-    }, 3000); // Adjust the interval duration as needed
+    }, 3000);
 
-    return () => clearInterval(intervalId); // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   const startIndex = currentSetIndex * logosPerSet;

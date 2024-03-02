@@ -2,6 +2,9 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import logo from "../assets/logo.png";
+import image1 from "../assets/image.jpg";
+import image2 from "../assets/image2.jpg";
 
 const AboutUs = () => {
   return (
@@ -16,7 +19,7 @@ const AboutUs = () => {
 
           <div className="flex items-center justify-center mb-8">
             <img
-              src="src/assets/logo.png" // Replace with the actual path to your logo image
+              src={logo} // Replace with the actual path to your logo image
               alt="Global Institute Logo"
               className="h-16 w-16 mr-4"
             />
@@ -55,12 +58,12 @@ const AboutUs = () => {
 
           <div className="flex justify-around mb-8">
             <img
-              src="src/assets/image.jpg" // Replace with the actual path to your image
+              src={image1} // Replace with the actual path to your image
               alt="About Us Image 1"
               className="rounded-md shadow-md mb-4 w-96 h-56"
             />
             <img
-              src="src/assets/image2.jpg" // Replace with the actual path to your image
+              src={image2} // Replace with the actual path to your image
               alt="About Us Image 2"
               className="rounded-md shadow-md w-96 h-56"
             />
