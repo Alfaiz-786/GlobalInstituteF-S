@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
+import back from "../assets/back.png";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "John Doe",
+      name: "Mehraj Dalvi",
       course: "Fire Safety Management",
       content:
         "I had an excellent experience at Global Institute. The instructors are knowledgeable, and the practical training provided a solid foundation for my career in fire safety.",
     },
     {
-      name: "Jane Smith",
+      name: "Saqlain Pitthoo",
       course: "Industrial Safety",
       content:
         "Choosing Global Institute was the best decision for my career. The comprehensive courses and supportive staff helped me gain the skills needed to excel in industrial safety.",
@@ -35,7 +37,7 @@ const Testimonials = () => {
     <div
       className="mt-12  relative bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: `url('src/assets/back.png')`, // Replace with your background image URL
+        backgroundImage: `url(${back})`, // Replace with your background image URL
         minHeight: "300px", // Set a minimum height for better responsiveness
       }}
     >
@@ -50,7 +52,7 @@ const Testimonials = () => {
           <div className="flex items-center justify-center">
             <div className="flex-shrink-0">
               <img
-                src="https://via.placeholder.com/60" // Replace with actual image URL
+                src={logo} // Replace with actual image URL
                 alt={`Student - ${currentTestimonial.name}`}
                 className="w-12 h-12 object-cover rounded-full"
               />

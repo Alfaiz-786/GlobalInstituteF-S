@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const AboutInstitute = () => {
   return (
@@ -41,12 +42,16 @@ const AboutInstitute = () => {
         </div>
 
         <div className="mt-8 flex justify-center space-x-4">
-          <button className="bg-red-800 text-white px-6 py-3 rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:border-indigo-600">
-            Learn More
-          </button>
-          <button className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-gray-600">
-            View Courses
-          </button>
+          <Link to="/aboutus">
+            <button className="bg-red-800 text-white px-6 py-3 rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:border-indigo-600">
+              Learn More
+            </button>
+          </Link>
+          <Link to="/courses">
+            <button className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-gray-600">
+              View Courses
+            </button>
+          </Link>
         </div>
       </div>
     </div>

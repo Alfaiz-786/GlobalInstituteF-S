@@ -21,13 +21,15 @@ const CourseCard = ({ title, description, duration, level, image, id }) => {
       </div>
       <div>
         <Link to={`/courses/${id}`}>
-          <button className="bg-blue-500 text-white px-6 py-3 rounded-md mr-4">
+          <button className="btn-enquiry bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:border-red-600 mr-4">
             Know More
           </button>
         </Link>
-        <button className="bg-green-500 text-white px-6 py-3 rounded-md">
-          Enroll Now
-        </button>
+        <Link to="/contactus">
+          <button className="btn-learn-more bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-gray-600">
+            Enroll Now
+          </button>
+        </Link>
       </div>
     </div>
   );

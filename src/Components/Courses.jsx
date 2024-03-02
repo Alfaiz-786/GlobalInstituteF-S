@@ -31,9 +31,11 @@ const CourseCard = ({ title, description, duration, level, image, id }) => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-          <button className="btn-enquiry bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:border-red-600">
-            Enquiry
-          </button>
+          <Link to="/contactus">
+            <button className="btn-enquiry bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-700 focus:outline-none focus:ring focus:border-red-600">
+              Enquiry
+            </button>
+          </Link>
           <Link to={`/courses/${id}`}>
             <button className="btn-learn-more bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-gray-600">
               Read More
@@ -51,7 +53,7 @@ const OurCourses = () => {
       id: 1,
       title: "Certificate in Firemen",
       description: "Basic course for aspiring firefighters.",
-      duration: "3 months",
+      duration: "6 months",
       level: "Beginner",
       image: fire5, // Replace with actual image URL
     },
@@ -59,7 +61,7 @@ const OurCourses = () => {
       id: 2,
       title: "Diploma In Fire & Safety Management",
       description: "In-depth program covering fire and safety protocols.",
-      duration: "6 months",
+      duration: "12 months",
       level: "Intermediate",
       image: fire4, // Replace with actual image URL
     },
@@ -75,7 +77,7 @@ const OurCourses = () => {
       id: 4,
       title: "Advanced Diploma In Industrial Safety",
       description: "Specialized course for industrial safety professionals.",
-      duration: "9 months",
+      duration: "12 months",
       level: "Advanced",
       image: fire6, // Replace with actual image URL
     },

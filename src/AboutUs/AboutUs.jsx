@@ -1,4 +1,3 @@
-// AboutUs.jsx
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -11,20 +10,20 @@ const AboutUs = () => {
     <>
       <Header />
       <div className="bg-gradient-to-b from-red-900 to-gray-800">
-        <div className="container mx-auto mt-12 p-8 bg-white rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center text-black mb-8 relative">
+        <div className="container mx-auto mt-12 p-4 md:p-8 bg-white rounded-lg shadow-lg">
+          <h2 className="text-4xl font-bold text-center text-black mb-6 relative">
             About Global Institute{" "}
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-20 bg-red-600"></span>
           </h2>
 
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center mb-6">
             <img
               src={logo} // Replace with the actual path to your logo image
               alt="Global Institute Logo"
-              className="h-16 w-16 mr-4"
+              className="h-16 w-16 mb-4 md:mr-4 md:mb-0"
             />
-            <div>
-              <p className="text-lg text-gray-700">
+            <div className="text-lg text-gray-700">
+              <p className="mb-4 md:mb-0">
                 Global Institute has been recognized as the{" "}
                 <strong>
                   Best Fire and Safety Institute in Navi Mumbai for 2023/24
@@ -56,16 +55,16 @@ const AboutUs = () => {
             the field of fire safety.
           </p>
 
-          <div className="flex justify-around mb-8">
+          <div className="flex flex-col md:flex-row justify-around mb-6">
             <img
               src={image1} // Replace with the actual path to your image
               alt="About Us Image 1"
-              className="rounded-md shadow-md mb-4 w-96 h-56"
+              className="rounded-md shadow-md mb-4 md:w-1/2 md:mb-0"
             />
             <img
               src={image2} // Replace with the actual path to your image
               alt="About Us Image 2"
-              className="rounded-md shadow-md w-96 h-56"
+              className="rounded-md shadow-md md:w-1/2"
             />
           </div>
 
@@ -73,7 +72,7 @@ const AboutUs = () => {
             Why Choose Global Institute?
           </p>
 
-          <ul className="list-disc pl-8 mb-4 text-lg text-gray-700">
+          <ul className="list-disc pl-4 md:pl-8 mb-4 text-lg text-gray-700">
             <li>
               Industry-Recognized Courses: Our courses are designed based on
               industry standards and are recognized for their relevance and
